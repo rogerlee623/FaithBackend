@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="application/json; charset=utf-8" />
+
+{if $lists}
+{volist name="lists" id="vo"}
+    {
+    id:'{$vo.id}',
+    type:'',
+    src:'{$vo.thumb}',
+    title:'{$vo.title}',
+    time:'{$vo.time}',
+    description:'{$vo.description}'
+    url:'{$vo.url}'
+    },
+{/volist}
+{else/}
+没有相关数据
+{/if}
+
+
+
